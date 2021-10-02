@@ -4,14 +4,16 @@ using Microsoft.Xna.Framework.Input;
 
 namespace gamejam_ld49
 {
-    public class Game1 : Game
+    public class GameLD49 : Game
     {
-        private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        private GraphicsDeviceManager graphics;
+        private SpriteBatch spriteBatch;
 
-        public Game1()
+        Texture2D reactorTexture;
+
+        public GameLD49()
         {
-            _graphics = new GraphicsDeviceManager(this);
+            graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
         }
@@ -25,9 +27,9 @@ namespace gamejam_ld49
 
         protected override void LoadContent()
         {
-            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            reactorTexture = Content.Load<Texture2D>("temp/reactor-temp");
         }
 
         protected override void Update(GameTime gameTime)
@@ -42,9 +44,15 @@ namespace gamejam_ld49
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Tan);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+            spriteBatch.Draw(
+                reactorTexture,
+                new Vector2(0, 0),
+                Color.White
+                );
+            spriteBatch.End();
 
             base.Draw(gameTime);
         }
