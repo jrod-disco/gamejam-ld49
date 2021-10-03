@@ -14,6 +14,17 @@
     <None Remove="Icon.bmp" />
     <None Remove="Core\" />
     <None Remove="Content\temp\" />
+    <None Remove="MonoGame.Extended" />
+    <None Remove="MonoGame.Aseprite" />
+    <None Remove="MonoGame.Extended.Graphics" />
+    <None Remove="MonoGame.Extended.Content.Pipeline" />
+    <None Remove="MonoGame.Extended.Input" />
+    <None Remove="MonoGame.Extended.Gui" />
+    <None Remove="MonoGame.Extended.Animations" />
+    <None Remove="MonoGame.Extended.Particles" />
+    <None Remove="MonoGame.Extended.Entities" />
+    <None Remove="MonoGame.Extended.SceneGraphs" />
+    <None Remove="MonoGame.Extended.Collisions" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -28,6 +39,17 @@
   <ItemGroup>
     <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.0.1641" />
     <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Extended" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Aseprite" Version="2.0.4.1" />
+    <PackageReference Include="MonoGame.Extended.Graphics" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Content.Pipeline" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Input" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Gui" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Animations" Version="3.7.0" />
+    <PackageReference Include="MonoGame.Extended.Particles" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Entities" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.SceneGraphs" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Collisions" Version="3.8.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />

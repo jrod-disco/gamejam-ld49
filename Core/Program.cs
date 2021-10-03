@@ -1,13 +1,13 @@
 ﻿using System;
 
-namespace gamejam_ld49
+namespace UnstableDeck
 {
     public static class Program
     {
         [STAThread]
         static void Main()
         {
-            using (var game = new GameLD49())
+            using (var game = new GameRoot())
                 game.Run();
         }
     }
