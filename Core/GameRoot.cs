@@ -24,11 +24,11 @@ namespace UnstableDeck
                 PreferredBackBufferWidth = gameWidth,
                 PreferredBackBufferHeight = gameHeight,
                 SynchronizeWithVerticalRetrace = false
+                
             };
 
-
             Content.RootDirectory = "Content";
-            IsFixedTimeStep = true;
+            IsFixedTimeStep = false;
             IsMouseVisible = true;
             TargetElapsedTime = TimeSpan.FromSeconds(1f / 60f);
 

@@ -25,6 +25,7 @@
     <None Remove="MonoGame.Extended.Entities" />
     <None Remove="MonoGame.Extended.SceneGraphs" />
     <None Remove="MonoGame.Extended.Collisions" />
+    <None Remove="MonoGame.Extended.Tweening" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Icon.ico" />
@@ -50,6 +51,7 @@
     <PackageReference Include="MonoGame.Extended.Entities" Version="3.8.0" />
     <PackageReference Include="MonoGame.Extended.SceneGraphs" Version="3.8.0" />
     <PackageReference Include="MonoGame.Extended.Collisions" Version="3.8.0" />
+    <PackageReference Include="MonoGame.Extended.Tweening" Version="3.8.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Core\" />
