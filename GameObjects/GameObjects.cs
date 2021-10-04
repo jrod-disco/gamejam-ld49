@@ -31,9 +31,11 @@ namespace UnstableDeck.GameObjects
         public Vector2 Scale = Vector2.One;
         public float Rotation = 0;
         public float Opacity = 1;
+        public Texture2D DefaultTexture;
         public Texture2D Texture;
         public Sprite Sprite;
-        public RectangleF BoundingRectangle => Sprite.GetBoundingRectangle(Position, 0, Vector2.One);
+        public RectangleF SpriteBoundingRectangle => Sprite.GetBoundingRectangle(Position, 0, Vector2.One);
+        public Rectangle BoundingRectangle => new Rectangle((int)(Position.X-Origin.X), (int)(Position.Y-Origin.Y), (int)Texture.Width, (int)Texture.Height);
         public Vector2 CenterOrigin => new Vector2(Texture.Width/2,Texture.Height/2);
     }
 }
